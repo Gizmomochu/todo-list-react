@@ -1,0 +1,38 @@
+.list {
+    padding: 0;
+}
+
+.list__button--green {
+    border: 2px solid green;
+    border-radius: 0%;
+    background-color: green;
+    color: white;
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.list__button--green:hover {
+    border: 2px solid hsl(120, 100%, 15%);
+    border-radius: 0%;
+    background-color: hsl(120, 100%, 15%);
+    transform: scale(1.1);
+}
+
+.list__button--red {
+    border: 2px solid red;
+    border-radius: 0%;
+    background-color: red;
+    color: white;
+    width: 26px;
+    height: 26px;
+    transition: 0.5s;
+}
+
+.list__button--red:hover {
+    border: 2px solid hsl(0, 100%, 40%);
+    border-radius: 0%;
+    background-color: hsl(0, 100%, 40%);
+    transform: scale(1.1);
+}

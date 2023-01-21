@@ -1,0 +1,21 @@
+.main {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+
+.buttons__hidden {
+    border: none;
+    background-color: white;
+    color: teal;
+    transition: 1s;
+}
+
+.buttons__hidden:hover {
+    transform: scale(1.05);
+}
+
+.buttons__hidden:disabled {
+    color: rgb(207, 211, 204);
+}

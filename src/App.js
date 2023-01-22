@@ -2,6 +2,8 @@ import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
+import Header from "./Header";
+import Main from "./Main";
 
 
 const tasks = [
@@ -13,20 +15,20 @@ const hideDoneTasks = true;
 
 function App() {
 
-        return (
-            <main className="main">
-                <h1>Lista zadań</h1>
-                <Section
-                    title="Dodaj nowe zadanie"
-                    body={<Form />}
-                />
-                <Section
-                    title="Lista zadań"
-                    body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
-                    extraDivContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
-                />
-            </main>
-        );
+    return (
+        <Main>
+            <Header title="Lista Zadań" />
+            <Section
+                title="Dodaj nowe zadanie"
+                body={<Form />}
+            />
+            <Section
+                title="Lista zadań"
+                body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+                extraDivContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+            />
+        </Main>
+    );
 
 }
 

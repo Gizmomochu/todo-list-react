@@ -8,7 +8,7 @@ import Main from "./Main";
 
 const tasks = [
     { id: 1, content: "Przejść na Reacta", done: false },
-    { id: 2, content: "Zrobić obiad", done: true },
+    { id: 2, content: "Zrobić kolację", done: true },
 ];
 
 const hideDoneTasks = true;

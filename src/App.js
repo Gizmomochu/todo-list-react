@@ -11,7 +11,7 @@ const tasks = [
     { id: 2, content: "Zrobić kolację", done: true },
 ];
 
-const hideDoneTasks = true;
+const hideDone = true;
 
 function App() {
 
@@ -24,8 +24,8 @@ function App() {
             />
             <Section
                 title="Lista zadań"
-                body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
-                extraDivContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+                body={<Tasks tasks={tasks} hideDone={hideDone} />}
+                extraDivContent={<Buttons tasks={tasks} hideDone={hideDone} />}
             />
         </Main>
     );

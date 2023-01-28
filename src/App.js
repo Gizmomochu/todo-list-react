@@ -20,7 +20,17 @@ function App() {
 
     const removeTask = (id) => {
         setTasks(tasks => tasks.filter(task => task.id !== id));
-    }
+    };
+
+    const toggleTaskDone = (id) => {
+        setTasks(task => tasks.map(task => {
+            if(task.id === id) {
+                return { ...task, done: !task.done};
+            };
+
+            return task;
+        }));
+    };
 
     return (
         <Main>
@@ -34,6 +44,7 @@ function App() {
                 body={
                     <Tasks
                         removeTask={removeTask}
+                        toggleTaskDone={toggleTaskDone}
                         tasks={tasks}
                         hideDone={hideDone} />}
                 extraDivContent={
